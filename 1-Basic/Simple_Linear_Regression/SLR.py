@@ -8,7 +8,7 @@ def fitSLR(x, y):
     dinominator = 0
     numerator = 0
     for i in range(0, n):
-        numerator += (x[i] - np.mean(x)) * (y[i] - np.mean(y))
+        numerator += (x[i] - np.mean(x)) * (y[i] - np.mean(y)) # np.mean() compute mean of whole array/list {much faster than normal python} 
         dinominator += (x[i] - np.mean(x)) ** 2
 
     print("numerator:" + str(numerator))
